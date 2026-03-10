@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2B850;
+    font-family: 'bebas neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #E24C60;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.pergunta {
+    font-family: darker grotesque, sans-serif;
+    font-size: 20px;
+    background-color: #E24C60;
+    color: white;
+    padding: 7px 7px 10px 7px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    outline: #b32337 solid 1px;
+}
+
+.btn-alternativa {
+    background-color: #E24C60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 11px 11px 11px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.btn-alternativa:hover {
+    background-color: #634803;
+    transition: background-color 0.2s;
+}
+
+.let {
+    background-color: #FEB2BC;
+    color: #b32337;
+    border-radius: 10px;
+    padding: 2px 11px 5px 11px;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    
+}
+
+.alternativas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.selecionado {
+    background-color:#634803 !important;
+    color: white !important;
+}
+
+.btn-voltar {
+    font-family: darker grotesque, sans-serif;
+    font-size: 15px;
+    border: none;           
+    box-shadow: none;      
+    outline: none;          
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.voltar {
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    
+}
+
+.respostaCerta {
+   font-size: 25px;
+   background-color: #B5FFBC;
+   color: #25612B;
+   border-radius: 10px;
+   padding: 11px 11px 11px 11px;
+   text-align: center;
+   margin-top: 35px;
+   margin-right: 20px;
+   outline: #25612B solid 1px;
+   display: none;
+}
+
+.respostaErrada {
+   font-size: 25px;
+   background-color: #E27E7E;
+   color: #FF0000;
+   border-radius: 10px;
+   padding: 11px 11px 11px 11px;
+   text-align: center;
+   margin-top: 35px;
+   margin-right: 20px;
+   outline: #FF0000 solid 1px;
+   display: none;
+}

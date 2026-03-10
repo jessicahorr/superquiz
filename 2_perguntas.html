@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Super Quiz</title>
+    <link rel="stylesheet" href="2_style_p.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>SUPER QUIZ</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="pergunta">
+            <h2 id="pergunta">Este é um exemplo de pergunta, viu?</h2>
+        </div>
+
+        <div class="alternativas" id="alternativas">
+            <button class="btn-alternativa">
+                <span class="let">A</span>
+                <span>Alternativa 1</span>
+            </button>
+
+            <button class="btn-alternativa">
+                <span class="let">B</span>
+                <span>Alternativa 2</span>
+            </button>
+
+            <button class="btn-alternativa">
+                <span class="let">C</span>
+                <span>Alternativa 3</span>
+            </button>
+
+            <button class="btn-alternativa">
+                <span class="let">D</span>
+                <span>Alternativa 4</span>
+            </button>
+        </div>
+
+        <div class="respostaCerta">
+            <p>Parabéns! Você acertou.</p>
+        </div>
+
+        <div class="respostaErrada">
+            <p>Errou! A alternativa correta é: .</p>
+        </div>
+
+        <div class="voltar">
+            <button onclick="window.location.href='2_home.html' "class="btn-voltar">Voltar ao início →</button>
+        </div>
+
+    </div>
+
+    <script src="2_script_perguntas.js"> </script>
+
+</body>
+
+</html>

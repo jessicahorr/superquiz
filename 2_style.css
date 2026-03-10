@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2B850;
+    font-family: 'Darker Grotesque', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    color: #E24C60;
+    text-align:left;
+    line-height: 0.8;
+    margin-bottom: 0;
+    
+}
+
+h2 {
+    font-size:30px;
+    color: #634803;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    color: #634803;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    padding: 91px;
+}
+
+.btn-categoria{
+
+    background-color: #E24C60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 11px 11px 11px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 25px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    
+}
+
+.btn-categoria:hover, .btn-row:hover, .btn-iniciar:hover {
+    background-color: #634803;
+    transition: background-color 0.2s;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+    margin-top:30px;
+}
+
+.btn-row {
+    background-color: #E24C60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 11px 11px 11px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 25px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.btn-iniciar {
+    background-color: #E24C60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 98.6%;
+}
+
+.categoria section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+section {
+    margin-bottom: 16px;
+    padding-left: 0px;
+    text-align: left;
+    
+}
+
+.selecionado {
+    background-color:#634803 !important;
+    color: white !important;
+}
