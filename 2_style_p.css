@@ -121,12 +121,12 @@ header {
 .respostaErrada {
    font-size: 25px;
    background-color: #E27E7E;
-   color: #FF0000;
+   color: #600303;
    border-radius: 10px;
    padding: 11px 11px 11px 11px;
    text-align: center;
    margin-top: 35px;
    margin-right: 20px;
-   outline: #FF0000 solid 1px;
+   outline: #600303 solid 1px;
    display: none;
 }
