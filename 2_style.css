@@ -8,27 +8,28 @@ body {
     background-color: #E2B850;
     font-family: 'Darker Grotesque', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 40px 20px;
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 100px;
     color: #E24C60;
-    text-align:left;
+    text-align: center;
     line-height: 0.8;
-    margin-bottom: 0;
-    
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size:30px;
+    font-size: 30px;
     color: #634803;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -42,23 +43,40 @@ h3 {
 
 .container {
     width: 100%;
-    max-width: 850px;
-    padding: 91px;
+    max-width: 1200px;
 }
 
-.btn-categoria{
+.box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
 
+.Yan, .Jess {
+    flex-shrink: 0;
+}
+
+.box2 {
+    max-width: 700px;
+    background-color: #FFE6EA;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.btn-categoria {
     background-color: #E24C60;
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 11px 11px 11px 11px;
+    padding: 11px;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 25px;
     margin-right: 8px;
     margin-bottom: 8px;
     cursor: pointer;
-    
+    white-space: nowrap;
 }
 
 .btn-categoria:hover, .btn-row:hover, .btn-iniciar:hover {
@@ -68,8 +86,8 @@ h3 {
 
 .row {
     display: flex;
-    gap: 40px;
-    margin-top:30px;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .btn-row {
@@ -77,12 +95,11 @@ h3 {
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 11px 11px 11px 11px;
+    padding: 11px;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 25px;
-    margin-right: 8px;
-    margin-bottom: 8px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .btn-iniciar {
@@ -93,27 +110,60 @@ h3 {
     padding: 16px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 28px;
-    margin-right: 0px;
-    margin-bottom: 8px;
     margin-top: 20px;
     cursor: pointer;
-    width: 98.6%;
+    width: 100%;
 }
 
-.categoria section{
+.categoria section {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-wrap: nowrap;
+    gap: 8px;
 }
 
 section {
     margin-bottom: 16px;
-    padding-left: 0px;
     text-align: left;
-    
 }
 
 .selecionado {
-    background-color:#634803 !important;
+    background-color: #634803 !important;
     color: white !important;
+}
+
+@media (max-width: 768px) {
+    .Yan, .Jess {
+        display: none;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .box2 {
+      flex: 1;
+
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 0;
+    width: 100%;
+    }
+
+    .btn-iniciar {
+        width: 100%;
+    }
+}
+
+.Yan img,
+.Jess img {
+    width: 280px;
+    height: auto;
 }
