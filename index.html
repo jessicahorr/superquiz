@@ -7,52 +7,58 @@
     <link rel="stylesheet" href="2_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <h1>SUPER QUIZ</h1>
-        <h2>Escolha como vai ser a sua pergunta:</h2>
 
-            
-            <h3>Categoria</h3>
-            <div class="categoria">
-                <section>
-            
-                <button class="btn-categoria">Conhecimentos Gerais</button>
-                <button class="btn-categoria">Esportes</button>
-                <button class="btn-categoria">Animais</button>
-                <button class="btn-categoria">Entretenimento</button>
-            </section>
+        <div class="box">
+            <div class="Yan">
+                <img src="https://i.imgur.com/5UAg8Uw.png" alt="Yan">
+            </div>
+
+            <div class="box2">
+                <h2>Escolha como vai ser a sua pergunta:</h2>
+
+                <h3>Categoria</h3>
+                <div class="categoria">
+                    <section>
+                        <button class="btn-categoria">Conhecimentos Gerais</button>
+                        <button class="btn-categoria">Esportes</button>
+                        <button class="btn-categoria">Animais</button>
+                        <button class="btn-categoria">Entretenimento</button>
+                    </section>
+                </div>
+
+                <div class="row">
+                    <section>
+                        <h3>Dificuldade</h3>
+                        <button class="btn-row" data-grupo="dificuldade">Fácil</button>
+                        <button class="btn-row" data-grupo="dificuldade">Médio</button>
+                        <button class="btn-row" data-grupo="dificuldade">Difícil</button>
+                    </section>
+
+                    <section>
+                        <h3>Tipo</h3>
+                        <button class="btn-row" data-grupo="tipo">Múltipla escolha</button>
+                        <button class="btn-row" data-grupo="tipo">Verdadeiro ou Falso</button>
+                    </section>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn-iniciar" disabled>Iniciar</button>
+                </div>
+            </div>
+
+            <div class="Jess">
+                <img src="https://i.imgur.com/95vrU6j.png" alt="Jess">
+            </div>
         </div>
- 
-        <div class="row">
-            <section>
-                <h3>Dificuldade</h3>
-                <button class="btn-row" data-grupo="dificuldade">Fácil</button>
-                <button class="btn-row" data-grupo="dificuldade">Médio</button>
-                <button class="btn-row" data-grupo="dificuldade">Difícil</button>
-            </section>
-
-            <section>
-                <h3>Tipo</h3>
-                <button class="btn-row" data-grupo="tipo">Múltipla escolha</button>
-                <button class="btn-row" data-grupo="tipo">Verdadeiro ou Falso</button>
-            </section>
-        </div>
-
-        <div class="btn-container">
-            <button class="btn-iniciar" disabled>Iniciar</button>
-        </div>
-
     </div>
 
-   
-
-<script src="2_script_home.js"> </script>
-
+    <script src="2_script_home.js"></script>
 </body>
 
 </html>
